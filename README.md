@@ -11,9 +11,9 @@ The solution contains the following projects:
 The Rpi.SenseHat is the main library. It contains a nice API to the Raspberry Sense HAT in C#.
 The Rpi.SenseHat is dependent on the RT.IoT.Sensors project, which is a library for managing the sensor readings from the Sense HAT. That project is currently a copy of another github repository until no NuGet of it is available.
 
-The RPi.SenseHat.Demo project is an application that you can run on the Raspberry Pi 2 | Raspberry Pi 3. It doesn't utilize the regular UI, so there is no need to connect it to a monitor using the HDMI port.
+The RPi.SenseHat.View project is an application that you can run on the Raspberry Pi 2 | Raspberry Pi 3. It doesn't utilize the regular UI, so there is no need to connect it to a monitor using the HDMI port.
 The application comes with a number of views.
-You must choose what demo to run by modifying the code in the "Selector" class. It should be fairly obvious what to do there. :-)
+You must choose what view to run by modifying the code in the "Selector" class. It should be fairly obvious what to do there. :-)
 
 
 The RPi.SenseHat.Tools is a regular Windows console application that was used to test out some of the calculations that was needed in the actual library.
@@ -55,5 +55,5 @@ https://www.microsoft.com/en-us/software-download/windowsiot)
 
 - Changes by https://github.com/Stefan-Xp/RPi.SenseHat
 
- * TODO :: Addded the "Threadending" to all Views - Now it is possible to switch through different Views using the "Next" Button on the GUI
- * TODO :: Added Demos "ScrollingClock" and "BinaryClock" which do exactly what you would think of them on the LED Matrix
+ * TODO? :: Addded the "Threadending" to all Views - Now it is possible to switch through different Views using the "Next" Button on the GUI
+ * TODO :: Added Views "ScrollingClock" and "BinaryClock?" which do exactly what you would think of them on the LED Matrix
