@@ -2,10 +2,11 @@
 A complete Windows IoT class library for the Raspberry Pi "Sense HAT" (C#)
 
 The solution contains the following projects:
-*) Rpi.SenseHat
-*) RPi.SenseHat.View
-*) RPi.SenseHat.Tools
-*) RT.IoT.Sensors
+
+* Rpi.SenseHat
+* RPi.SenseHat.View
+* RPi.SenseHat.Tools
+* RT.IoT.Sensors
 
 The Rpi.SenseHat is the main library. It contains a nice API to the Raspberry Sense HAT in C#.
 The Rpi.SenseHat is dependent on the RT.IoT.Sensors project, which is a library for managing the sensor readings from the Sense HAT. That project is currently a copy of another github repository until no NuGet of it is available.
@@ -22,17 +23,13 @@ It also contains the process of converting a bitmap holding a font image into a 
 ************************
 To get started:
 
-*) Open the solution in Visual Studio 2017.
+* Open the solution in Visual Studio 2017.
+* Make sure the "RPi.SenseHat.View" project is the start-up project.
+* Choose "ARM" as the solution platform.
+* Direct the debugging to a "Remote Machine" -- and make sure you enter the IP-address of your Raspberry Pi (and no authentication should be used).
+* Edit the Selector class (in the root of the "RPi.SenseHat.View" project) to select which view to run.
 
-*) Make sure the "RPi.SenseHat.View" project is the start-up project.
-
-*) Choose "ARM" as the solution platform.
-
-*) Direct the debugging to a "Remote Machine" -- and make sure you enter the IP-address of your Raspberry Pi (and no authentication should be used).
-
-*) Edit the Selector class (in the root of the "RPi.SenseHat.View" project) to select which view to run.
-
-*) Run!
+* Run!
 
 
 ************************
