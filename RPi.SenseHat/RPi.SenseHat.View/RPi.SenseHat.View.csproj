@@ -148,13 +148,13 @@
       <Project>{f5c43428-288f-4696-93cd-1088e77db5bf}</Project>
       <Name>RPi.SenseHat</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RTIMULibCS\RTIMULibCS.csproj">
+    <ProjectReference Include="..\RTIMULibCS\RTIMU.csproj">
       <Project>{c91bbcdd-0775-43fd-ab8d-e46fc1b07e14}</Project>
-      <Name>RTIMULibCS</Name>
+      <Name>RTIMU</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="WindowsIoT, Version=10.0.14393.0">
+    <SDKReference Include="WindowsIoT, Version=10.0.15063.0">
       <Name>Windows IoT Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>

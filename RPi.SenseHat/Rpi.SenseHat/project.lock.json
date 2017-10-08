@@ -2203,11 +2203,11 @@
           }
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -4496,11 +4496,11 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -6825,11 +6825,11 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -9127,11 +9127,11 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -11465,11 +11465,11 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -13767,11 +13767,11 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -16105,11 +16105,11 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     }
@@ -24373,10 +24373,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "RTIMULibCS/1.0.0": {
+    "RTIMU/1.0.0": {
       "type": "project",
       "path": "../RTIMULibCS/project.json",
-      "msbuildProject": "../RTIMULibCS/RTIMULibCS.csproj"
+      "msbuildProject": "../RTIMULibCS/RTIMU.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -24408,8 +24408,8 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj": {
-              "projectPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj"
+            "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMU.csproj": {
+              "projectPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMU.csproj"
             }
           }
         }

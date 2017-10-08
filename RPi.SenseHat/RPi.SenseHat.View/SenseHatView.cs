@@ -25,27 +25,25 @@ using System;
 using System.Threading;
 using Emmellsoft.IoT.Rpi.SenseHat;
 
-namespace RPi.SenseHat.View
-{
-	public abstract class SenseHatView
-	{
-		private readonly ManualResetEventSlim _waitEvent = new ManualResetEventSlim(false);
+namespace RPi.SenseHat.View {
 
-		protected SenseHatView(ISenseHat senseHat, Action<string> setScreenText = null)
-		{
-			SetScreenText = setScreenText;
-			SenseHat = senseHat;
-		}
+    public abstract class SenseHatView {
+        private readonly ManualResetEventSlim _waitEvent = new ManualResetEventSlim(false);
 
-		protected Action<string> SetScreenText { get; }
+        protected SenseHatView(ISenseHat senseHat, Action<string> setScreenText = null) {
+            SetScreenText = setScreenText;
+            SenseHat = senseHat;
+        }
 
-		protected ISenseHat SenseHat { get; }
+        protected Action<string> SetScreenText { get; }
 
-		public abstract void Run();
+        protected ISenseHat SenseHat { get; }
 
-		protected void Sleep(TimeSpan duration)
-		{
-			_waitEvent.Wait(duration);
-		}
-	}
+        public abstract void Run();
+
+        protected void Sleep(TimeSpan duration) {
+            _waitEvent.Wait(duration);
+        }
+
+    }
 }

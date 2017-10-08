@@ -145,14 +145,14 @@
     <Content Include="Properties\Rpi.SenseHat.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RTIMULibCS\RTIMULibCS.csproj">
+    <ProjectReference Include="..\RTIMULibCS\RTIMU.csproj">
       <Project>{c91bbcdd-0775-43fd-ab8d-e46fc1b07e14}</Project>
-      <Name>RTIMULibCS</Name>
+      <Name>RTIMU</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="WindowsIoT, Version=10.0.14393.0">
-      <Name>Windows IoT Extensions for the UWP</Name>
+    <SDKReference Include="WindowsIoT, Version=10.0.15063.0">
+      <Name>Windows IoT Extensions for the UWP %28WindowsIoT, Version=10.0.15063.0%29</Name>
     </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

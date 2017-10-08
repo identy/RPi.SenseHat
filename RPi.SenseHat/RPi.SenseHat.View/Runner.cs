@@ -25,29 +25,29 @@ using System;
 using System.Threading.Tasks;
 using Emmellsoft.IoT.Rpi.SenseHat;
 
-namespace RPi.SenseHat.View
-{
-	/// <summary>
-	/// Runs a demo.
-	/// </summary>
-	public static class Runner
-	{
-		/// <summary>
-		/// Call this (for example) from the constructor of the MainPage.
-		/// Example:
-		/// <code>Runner.Run(senseHat => new Demos.DiscoLights(senseHat));</code>
-		/// </summary>
-		/// <param name="createDemo">The demo to run.</param>
-		public static void Run(Func<ISenseHat, SenseHatView> createView)
-		{
-			Task.Run(async () =>
-			{
-				ISenseHat senseHat = await SenseHatFactory.GetSenseHat().ConfigureAwait(false);
+namespace RPi.SenseHat.View {
 
-				SenseHatView view = createView(senseHat);
+    /// <summary>
+    /// Runs a view.
+    /// </summary>
+    public static class Runner {
 
+        /// <summary>
+        /// Call this (for example) from the constructor of the MainPage.
+        /// Example:
+        /// <code>Runner.Run(senseHat => new Views.DiscoLights(senseHat));</code>
+        /// </summary>
+        /// <param name="createView">The view to run.</param>
+        public static void Run(Func<ISenseHat, SenseHatView> createView) {
+
+            Task.Run(async () => {
+
+                ISenseHat senseHat = await SenseHatFactory.GetSenseHat().ConfigureAwait(false);
+
+                SenseHatView view = createView(senseHat);
                 view.Run();
-			}).ConfigureAwait(false);
-		}
-	}
+
+            }).ConfigureAwait(false);
+        }
+    }
 }

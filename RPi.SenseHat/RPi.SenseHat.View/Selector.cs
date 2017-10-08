@@ -25,16 +25,13 @@ using System;
 using Emmellsoft.IoT.Rpi.SenseHat;
 using RPi.SenseHat.Views;
 
-namespace RPi.SenseHat.View
-{
-    public static class Selector
-    {
+namespace RPi.SenseHat.View {
+
+    public static class Selector {
         private static bool AlsoUseHdmiOutput = true; // Set this to true/false whether you have a display connected to the HDMI port of the Raspberry Pi!
 
-        public static SenseHatView GetView(ISenseHat senseHat, Action<string> setScreenText)
-        {
-            if (!AlsoUseHdmiOutput)
-            {
+        public static SenseHatView GetView(ISenseHat senseHat, Action<string> setScreenText) {
+            if (!AlsoUseHdmiOutput) {
                 // If you don't utilize the HDMI output, set the setScreenText parameter to null.
                 setScreenText = null;
             }

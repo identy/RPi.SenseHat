@@ -2208,14 +2208,14 @@
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-          "RTIMULibCS": "1.0.0"
+          "RTIMU": "1.0.0"
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -4509,14 +4509,14 @@
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-          "RTIMULibCS": "1.0.0"
+          "RTIMU": "1.0.0"
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -6846,14 +6846,14 @@
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-          "RTIMULibCS": "1.0.0"
+          "RTIMU": "1.0.0"
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -9156,14 +9156,14 @@
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-          "RTIMULibCS": "1.0.0"
+          "RTIMU": "1.0.0"
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -11502,14 +11502,14 @@
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-          "RTIMULibCS": "1.0.0"
+          "RTIMU": "1.0.0"
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -13812,14 +13812,14 @@
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-          "RTIMULibCS": "1.0.0"
+          "RTIMU": "1.0.0"
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     },
@@ -16158,14 +16158,14 @@
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0",
-          "RTIMULibCS": "1.0.0"
+          "RTIMU": "1.0.0"
         }
       },
-      "RTIMULibCS/1.0.0": {
+      "RTIMU/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
-          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2"
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
     }
@@ -24434,10 +24434,10 @@
       "path": "../RPi.SenseHat/project.json",
       "msbuildProject": "../RPi.SenseHat/RPi.SenseHat.csproj"
     },
-    "RTIMULibCS/1.0.0": {
+    "RTIMU/1.0.0": {
       "type": "project",
       "path": "../RTIMULibCS/project.json",
-      "msbuildProject": "../RTIMULibCS/RTIMULibCS.csproj"
+      "msbuildProject": "../RTIMULibCS/RTIMU.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -24472,8 +24472,8 @@
             "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RPi.SenseHat\\RPi.SenseHat.csproj": {
               "projectPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RPi.SenseHat\\RPi.SenseHat.csproj"
             },
-            "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj": {
-              "projectPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj"
+            "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMU.csproj": {
+              "projectPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMU.csproj"
             }
           }
         }
