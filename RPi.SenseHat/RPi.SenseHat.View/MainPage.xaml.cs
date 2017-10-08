@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -26,14 +26,15 @@ using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
 using Windows.UI.Xaml.Controls;
 
-namespace RPi.SenseHat.Demo
+namespace RPi.SenseHat.View
 {
 	public sealed partial class MainPage : Page
 	{
 		public MainPage()
 		{
 			InitializeComponent();
-			DemoRunner.Run(senseHat => DemoSelector.GetDemo(senseHat, SetScreenText));
+
+			Runner.Run(senseHat => Selector.GetView(senseHat, SetScreenText));
 		}
 
 		private async void SetScreenText(string text)

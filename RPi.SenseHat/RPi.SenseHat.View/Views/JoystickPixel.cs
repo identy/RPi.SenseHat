@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -24,13 +24,14 @@
 using System;
 using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
     /// <summary>
     /// Use the joystick to move the pixel around.
     /// </summary>
-    public class JoystickPixel : SenseHatDemo
+    public class JoystickPixel : SenseHatView
     {
         private readonly Color[] _colors = { Colors.Red, Colors.Green, Colors.Blue, Colors.Cyan, Colors.Magenta, Colors.Yellow, Colors.White };
         private bool _lastPressingEnter;

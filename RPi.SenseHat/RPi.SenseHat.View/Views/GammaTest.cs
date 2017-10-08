@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -25,13 +25,14 @@ using System;
 using System.Linq;
 using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
 	/// <summary>
 	/// Tries out different gamma settings for the LED display. Use the joystick to play around.
 	/// </summary>
-	public class GammaTest : SenseHatDemo
+	public class GammaTest : SenseHatView
 	{
 		[Flags]
 		private enum ColorComponents

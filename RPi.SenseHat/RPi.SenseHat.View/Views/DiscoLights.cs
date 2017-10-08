@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -24,13 +24,14 @@
 using System;
 using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
 	/// <summary>
 	/// Click on the joystick to change drawing mode!
 	/// </summary>
-	public class DiscoLights : SenseHatDemo
+	public class DiscoLights : SenseHatView
 	{
 		private static readonly Random Random = new Random();
 		private ColorMode _currentMode;

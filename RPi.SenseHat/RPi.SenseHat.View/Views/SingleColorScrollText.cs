@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -27,14 +27,15 @@ using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
 using Emmellsoft.IoT.Rpi.SenseHat.Fonts;
 using Emmellsoft.IoT.Rpi.SenseHat.Fonts.SingleColor;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
 	/// <summary>
 	/// Single color scroll-text.
 	/// Click on the joystick to change drawing mode!
 	/// </summary>
-	public class SingleColorScrollText : SenseHatDemo
+	public class SingleColorScrollText : SenseHatView
 	{
 		private readonly string _scrollText;
 

@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -25,28 +25,28 @@ using System;
 using System.Threading.Tasks;
 using Emmellsoft.IoT.Rpi.SenseHat;
 
-namespace RPi.SenseHat.Demo
+namespace RPi.SenseHat.View
 {
 	/// <summary>
 	/// Runs a demo.
 	/// </summary>
-	public static class DemoRunner
+	public static class Runner
 	{
 		/// <summary>
 		/// Call this (for example) from the constructor of the MainPage.
 		/// Example:
-		/// <code>DemoRunner.Run(senseHat => new Demos.DiscoLights(senseHat));</code>
+		/// <code>Runner.Run(senseHat => new Demos.DiscoLights(senseHat));</code>
 		/// </summary>
 		/// <param name="createDemo">The demo to run.</param>
-		public static void Run(Func<ISenseHat, SenseHatDemo> createDemo)
+		public static void Run(Func<ISenseHat, SenseHatView> createView)
 		{
 			Task.Run(async () =>
 			{
 				ISenseHat senseHat = await SenseHatFactory.GetSenseHat().ConfigureAwait(false);
 
-				SenseHatDemo demo = createDemo(senseHat);
+				SenseHatView view = createView(senseHat);
 
-				demo.Run();
+                view.Run();
 			}).ConfigureAwait(false);
 		}
 	}

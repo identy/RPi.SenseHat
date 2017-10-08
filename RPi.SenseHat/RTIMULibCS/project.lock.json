@@ -21949,19 +21949,19 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\Mattias\\.nuget\\packages\\": {}
+    "C:\\Users\\ident\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Projects\\GitHub\\Emmellsoft\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj",
+      "projectUniqueName": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj",
       "projectName": "RTIMULibCS",
-      "projectPath": "C:\\Projects\\GitHub\\Emmellsoft\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj",
-      "projectJsonPath": "C:\\Projects\\GitHub\\Emmellsoft\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\project.json",
-      "packagesPath": "C:\\Users\\Mattias\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\GitHub\\Emmellsoft\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\obj\\",
+      "projectPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\RTIMULibCS.csproj",
+      "projectJsonPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\project.json",
+      "packagesPath": "C:\\Users\\ident\\.nuget\\packages\\",
+      "outputPath": "D:\\iot\\RPi.SenseHat\\RPi.SenseHat\\RTIMULibCS\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\Mattias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ident\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {

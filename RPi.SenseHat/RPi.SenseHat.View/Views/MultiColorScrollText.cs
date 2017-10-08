@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -27,13 +27,14 @@ using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
 using Emmellsoft.IoT.Rpi.SenseHat.Fonts;
 using Emmellsoft.IoT.Rpi.SenseHat.Fonts.MultiColor;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
 	/// <summary>
 	/// Multi-color scroll-text.
 	/// </summary>
-	public class MultiColorScrollText : SenseHatDemo
+	public class MultiColorScrollText : SenseHatView
 	{
 		private readonly string _scrollText;
 

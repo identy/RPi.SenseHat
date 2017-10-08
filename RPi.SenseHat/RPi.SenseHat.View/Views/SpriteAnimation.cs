@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -25,13 +25,14 @@ using System;
 using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
 using Emmellsoft.IoT.Rpi.SenseHat.Sprites;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
 	/// <summary>
 	/// Use the joystick to move Mario. The middle button switches orientation and flipping of the drawing.
 	/// </summary>
-	public class SpriteAnimation : SenseHatDemo
+	public class SpriteAnimation : SenseHatView
 	{
 		public SpriteAnimation(ISenseHat senseHat)
 			: base(senseHat)

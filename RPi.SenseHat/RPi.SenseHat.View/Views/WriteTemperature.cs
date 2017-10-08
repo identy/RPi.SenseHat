@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -25,13 +25,14 @@ using System;
 using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
 using Emmellsoft.IoT.Rpi.SenseHat.Fonts.SingleColor;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
 	/// <summary>
 	/// Is it only me or does it show some unusual high temperature? :-S
 	/// </summary>
-	public class WriteTemperature : SenseHatDemo
+	public class WriteTemperature : SenseHatView
 	{
 		public WriteTemperature(ISenseHat senseHat, Action<string> setScreenText)
 			: base(senseHat, setScreenText)

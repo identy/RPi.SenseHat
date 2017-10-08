@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -25,13 +25,13 @@ using System;
 using System.Threading;
 using Emmellsoft.IoT.Rpi.SenseHat;
 
-namespace RPi.SenseHat.Demo
+namespace RPi.SenseHat.View
 {
-	public abstract class SenseHatDemo
+	public abstract class SenseHatView
 	{
 		private readonly ManualResetEventSlim _waitEvent = new ManualResetEventSlim(false);
 
-		protected SenseHatDemo(ISenseHat senseHat, Action<string> setScreenText = null)
+		protected SenseHatView(ISenseHat senseHat, Action<string> setScreenText = null)
 		{
 			SetScreenText = setScreenText;
 			SenseHat = senseHat;

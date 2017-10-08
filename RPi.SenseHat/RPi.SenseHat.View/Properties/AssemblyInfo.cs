@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Emmellsoft.IoT.Rpi.SenseHat.Demo")]
+[assembly: AssemblyTitle("Emmellsoft.IoT.RPi.SenseHat.View")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Emmellsoft")]
-[assembly: AssemblyProduct("Emmellsoft.IoT.Rpi.SenseHat.Demo")]
+[assembly: AssemblyProduct("Emmellsoft.IoT.RPi.SenseHat.View")]
 [assembly: AssemblyCopyright("Copyright © Emmellsoft 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

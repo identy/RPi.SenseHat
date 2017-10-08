@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -22,15 +22,19 @@
 //  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 using System;
-using System.Diagnostics;
-using System.Text;
+using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
+using RichardsTech.Sensors;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
-	public sealed class ReadAllSensors : SenseHatDemo
+	/// <summary>
+	/// The green blob is drawn to the center of the earth! If you hold it upside down it gets angry and turns red. :-O
+	/// </summary>
+	public sealed class GravityBlob : SenseHatView
 	{
-		public ReadAllSensors(ISenseHat senseHat, Action<string> setScreenText)
+		public GravityBlob(ISenseHat senseHat, Action<string> setScreenText)
 			: base(senseHat, setScreenText)
 		{
 		}
@@ -40,34 +44,71 @@ namespace RPi.SenseHat.Demo.Demos
 			TimeSpan mainPageUpdateRate = TimeSpan.FromSeconds(0.5);
 			DateTime nextMainPageUpdate = DateTime.Now.Add(mainPageUpdateRate);
 
-			var stringBuilder = new StringBuilder();
-
 			while (true)
 			{
 				Sleep(TimeSpan.FromMilliseconds(50));
 
-				SenseHat.Sensors.ImuSensor.Update();      // Try get a new read-out for the Gyro, Acceleration, MagneticField and Pose.
-				SenseHat.Sensors.PressureSensor.Update(); // Try get a new read-out for the Pressure.
-				SenseHat.Sensors.HumiditySensor.Update(); // Try get a new read-out for the Temperature and Humidity.
+				if (!SenseHat.Sensors.ImuSensor.Update())
+				{
+					continue;
+				}
 
-				// Build up the string
-				stringBuilder.Clear();
-				stringBuilder.AppendLine($"Gyro: {SenseHat.Sensors.Gyro?.ToString(false) ?? "N/A"}");          // From the ImuSensor.
-				stringBuilder.AppendLine($"Accel: {SenseHat.Sensors.Acceleration?.ToString(false) ?? "N/A"}"); // From the ImuSensor.
-				stringBuilder.AppendLine($"Mag: {SenseHat.Sensors.MagneticField?.ToString(false) ?? "N/A"}");  // From the ImuSensor.
-				stringBuilder.AppendLine($"Pose: {SenseHat.Sensors.Pose?.ToString(false) ?? "N/A"}");          // From the ImuSensor.
-				stringBuilder.AppendLine($"Press: {SenseHat.Sensors.Pressure?.ToString() ?? "N/A"}");          // From the PressureSensor.
-				stringBuilder.AppendLine($"Temp: {SenseHat.Sensors.Temperature?.ToString() ?? "N/A"}");        // From the HumiditySensor.
-				stringBuilder.AppendLine($"Hum: {SenseHat.Sensors.Humidity?.ToString() ?? "N/A"}");            // From the HumiditySensor.
+				if (!SenseHat.Sensors.Acceleration.HasValue)
+				{
+					continue;
+				}
+
+				Color[,] colors = CreateGravityBlobScreen(SenseHat.Sensors.Acceleration.Value);
+
+				SenseHat.Display.CopyColorsToScreen(colors);
+
+				SenseHat.Display.Update();
 
 				if ((SetScreenText != null) && nextMainPageUpdate <= DateTime.Now)
 				{
-					SetScreenText(stringBuilder.ToString());
+					SetScreenText($"{SenseHat.Sensors.Acceleration.Value.X:0.00}, {SenseHat.Sensors.Acceleration.Value.Y:0.00}, {SenseHat.Sensors.Acceleration.Value.Z:0.00}");
 					nextMainPageUpdate = DateTime.Now.Add(mainPageUpdateRate);
 				}
-
-				Debug.WriteLine(stringBuilder.ToString());
 			}
+		}
+
+		private static Color[,] CreateGravityBlobScreen(Vector3 vector)
+		{
+			double x0 = (vector.X + 1) * 5.5 - 2;
+			double y0 = (vector.Y + 1) * 5.5 - 2;
+
+			double distScale = 4;
+
+			var colors = new Color[8, 8];
+
+			bool isUpsideDown = vector.Z < 0;
+
+			for (int y = 0; y < 8; y++)
+			{
+				for (int x = 0; x < 8; x++)
+				{
+					double dx = x0 - x;
+					double dy = y0 - y;
+
+					double dist = Math.Sqrt(dx * dx + dy * dy) / distScale;
+					if (dist > 1)
+					{
+						dist = 1;
+					}
+
+					int colorIntensity = (int)Math.Round(255 * (1 - dist));
+					if (colorIntensity > 255)
+					{
+						colorIntensity = 255;
+					}
+
+					colors[x, y] = isUpsideDown
+						? Color.FromArgb(255, (byte)colorIntensity, 0, 0)
+						: Color.FromArgb(255, 0, (byte)colorIntensity, 0);
+				}
+			}
+
+			return colors;
 		}
 	}
 }

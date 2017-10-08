@@ -1,6 +1,6 @@
 ﻿////////////////////////////////////////////////////////////////////////////
 //
-//  This file is part of Rpi.SenseHat.Demo
+//  This file is part of RPi.SenseHat.View
 //
 //  Copyright (c) 2017, Mattias Larsson
 //
@@ -25,13 +25,14 @@ using System;
 using Windows.Foundation;
 using Windows.UI;
 using Emmellsoft.IoT.Rpi.SenseHat;
+using RPi.SenseHat.View;
 
-namespace RPi.SenseHat.Demo.Demos
+namespace RPi.SenseHat.Views
 {
 	/// <summary>
 	/// Note! You must calibrate the magnetic sensor by moving the Raspberry Pi device around in an 'eight' figure a few seconds at startup!
 	/// </summary>
-	public class Compass : SenseHatDemo
+	public class Compass : SenseHatView
 	{
 		public Compass(ISenseHat senseHat, Action<string> setScreenText)
 			: base(senseHat, setScreenText)
