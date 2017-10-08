@@ -41,7 +41,7 @@ It's deliberately not thread-safe to maximize performance, so you should avoid c
 
 ************************
 
-- Changes by Mahmoud Saleh https://github.com/msalehmsft
+- Changes by Mahmoud Saleh https://github.com/msalehmsft/RPi.SenseHat
 
 A version of RPI.SenseHat that works with Lightning
 This version of the RPI.SenseHat works with either the default drivers
