@@ -29,6 +29,41 @@
           "lib/netcore50/Microsoft.CSharp.dll": {}
         }
       },
+      "Microsoft.IoT.Lightning/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/Lightning.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.IoT.Lightning.Providers.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/Lightning.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/Microsoft.IoT.Lightning.Providers.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/Lightning.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/Microsoft.IoT.Lightning.Providers.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
+      },
       "Microsoft.Net.Native.Compiler/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -2207,6 +2242,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
+          "Microsoft.IoT.Lightning": "1.1.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
@@ -2237,6 +2273,19 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.IoT.Lightning/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/Lightning.dll": {},
+          "runtimes/win10-arm/native/Microsoft.IoT.Lightning.Providers.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/1.7.0": {
@@ -4500,6 +4549,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
+          "Microsoft.IoT.Lightning": "1.1.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
@@ -4530,6 +4580,19 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.IoT.Lightning/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/Lightning.dll": {},
+          "runtimes/win10-arm/native/Microsoft.IoT.Lightning.Providers.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/1.7.0": {
@@ -6829,6 +6892,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
+          "Microsoft.IoT.Lightning": "1.1.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
@@ -6859,6 +6923,19 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.IoT.Lightning/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/Lightning.dll": {},
+          "runtimes/win10-x64/native/Microsoft.IoT.Lightning.Providers.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/1.7.0": {
@@ -9131,6 +9208,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
+          "Microsoft.IoT.Lightning": "1.1.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
@@ -9161,6 +9239,19 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.IoT.Lightning/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/Lightning.dll": {},
+          "runtimes/win10-x64/native/Microsoft.IoT.Lightning.Providers.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/1.7.0": {
@@ -11469,6 +11560,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
+          "Microsoft.IoT.Lightning": "1.1.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
@@ -11499,6 +11591,19 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.IoT.Lightning/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/Lightning.dll": {},
+          "runtimes/win10-x86/native/Microsoft.IoT.Lightning.Providers.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/1.7.0": {
@@ -13771,6 +13876,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
+          "Microsoft.IoT.Lightning": "1.1.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
@@ -13801,6 +13907,19 @@
         },
         "runtime": {
           "lib/netcore50/Microsoft.CSharp.dll": {}
+        }
+      },
+      "Microsoft.IoT.Lightning/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/Lightning.dll": {},
+          "runtimes/win10-x86/native/Microsoft.IoT.Lightning.Providers.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/1.7.0": {
@@ -16109,6 +16228,7 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
         "dependencies": {
+          "Microsoft.IoT.Lightning": "1.1.0",
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
         }
       }
@@ -16170,6 +16290,78 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Microsoft.IoT.Lightning/1.1.0": {
+      "sha512": "gItVnvHk/fuq1xr8Cz//taf/ORnkA/rRcqzNeuh8IMhVkLoxQD2VXwak1a9wMLdsvoyql4puIOmue57Y+OMt1g==",
+      "type": "package",
+      "path": "microsoft.iot.lightning/1.1.0",
+      "files": [
+        "build/native/Microsoft.IoT.Lightning.targets",
+        "include/ADS1015Support.h",
+        "include/Adc.h",
+        "include/ArduinoCommon.h",
+        "include/ArduinoError.h",
+        "include/BcmI2cController.h",
+        "include/BcmSpiController.h",
+        "include/BoardPins.h",
+        "include/BtI2cController.h",
+        "include/BtSpiController.h",
+        "include/Client.h",
+        "include/DMap.h",
+        "include/DmapSupport.h",
+        "include/ErrorCodes.h",
+        "include/ExpanderDefs.h",
+        "include/GpioController.h",
+        "include/GpioInterrupt.h",
+        "include/HardwareSerial.h",
+        "include/HiResTimer.h",
+        "include/I2c.h",
+        "include/I2cController.h",
+        "include/I2cTransaction.h",
+        "include/I2cTransfer.h",
+        "include/IPAddress.h",
+        "include/Lightning.h",
+        "include/LiquidCrystal.h",
+        "include/MCP3008support.h",
+        "include/MuxDefs.h",
+        "include/NetworkSerial.h",
+        "include/PCA9685Support.h",
+        "include/Print.h",
+        "include/Printable.h",
+        "include/PulseIn.h",
+        "include/Server.h",
+        "include/Servo.h",
+        "include/SpiController.h",
+        "include/Stepper.h",
+        "include/Stream.h",
+        "include/Udp.h",
+        "include/WCharacter.h",
+        "include/WInterrupt.h",
+        "include/WString.h",
+        "include/WindowsRandom.h",
+        "include/WindowsTime.h",
+        "include/Wire.h",
+        "include/arduino.h",
+        "include/avr/interrupt.h",
+        "include/avr/macros.h",
+        "include/avr/pgmspace.h",
+        "include/binary.h",
+        "include/eeprom.h",
+        "include/pins_arduino.h",
+        "include/spi.h",
+        "lib/uap10.0/Microsoft.IoT.Lightning.Providers.winmd",
+        "lib/win10-arm/native/Lightning.lib",
+        "lib/win10-x64/native/Lightning.lib",
+        "lib/win10-x86/native/Lightning.lib",
+        "microsoft.iot.lightning.1.1.0.nupkg.sha512",
+        "microsoft.iot.lightning.nuspec",
+        "runtimes/win10-arm/native/Lightning.dll",
+        "runtimes/win10-arm/native/Microsoft.IoT.Lightning.Providers.dll",
+        "runtimes/win10-x64/native/Lightning.dll",
+        "runtimes/win10-x64/native/Microsoft.IoT.Lightning.Providers.dll",
+        "runtimes/win10-x86/native/Lightning.dll",
+        "runtimes/win10-x86/native/Microsoft.IoT.Lightning.Providers.dll"
       ]
     },
     "Microsoft.Net.Native.Compiler/1.7.0": {
@@ -24381,6 +24573,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "Microsoft.IoT.Lightning >= 1.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.4.0"
     ],
     "UAP,Version=v10.0.10240": []
@@ -24416,6 +24609,7 @@
       }
     },
     "dependencies": {
+      "Microsoft.IoT.Lightning": "1.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.4.0"
     },
     "frameworks": {

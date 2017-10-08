@@ -11,7 +11,7 @@ The solution contains the following projects:
 The Rpi.SenseHat is the main library. It contains a nice API to the Raspberry Sense HAT in C#.
 The Rpi.SenseHat is dependent on the RT.IoT.Sensors project, which is a library for managing the sensor readings from the Sense HAT. That project is currently a copy of another github repository until no NuGet of it is available.
 
-The RPi.SenseHat.Demo project is an application that you can run on the Raspberry Pi 2 || Pi 3. It doesn't utilize the regular UI, so there is no need to connect it to a monitor using the HDMI port.
+The RPi.SenseHat.Demo project is an application that you can run on the Raspberry Pi 2 | Raspberry Pi 3. It doesn't utilize the regular UI, so there is no need to connect it to a monitor using the HDMI port.
 The application comes with a number of views.
 You must choose what demo to run by modifying the code in the "Selector" class. It should be fairly obvious what to do there. :-)
 
@@ -38,3 +38,22 @@ Regarding thread safety:
 The SenseHatFactory.Singleton.GetSenseHat() call is thread-safe, but the rest of the API is not.
 
 It's deliberately not thread-safe to maximize performance, so you should avoid calling (for instance) the Update method on the sensors simultaneously from different threads (but you *may* call it from any thread).
+
+************************
+
+- Changes by Mahmoud Saleh https://github.com/msalehmsft
+
+A version of RPI.SenseHat that works with Lightning
+This version of the RPI.SenseHat works with either the default drivers
+or the Lighting (DMAP) drivers on IOT Core.
+The change adds a dependency on the latest Lightning Nuget package,
+v1.1.0 and updates the sources, so it default to the Lightning driver if enabled.
+
+https://www.microsoft.com/en-us/software-download/windowsiot)
+
+************************
+
+- Changes by https://github.com/Stefan-Xp/RPi.SenseHat
+
+ * TODO :: Addded the "Threadending" to all Views - Now it is possible to switch through different Views using the "Next" Button on the GUI
+ * TODO :: Added Demos "ScrollingClock" and "BinaryClock" which do exactly what you would think of them on the LED Matrix
