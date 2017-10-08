@@ -33,7 +33,8 @@ namespace Emmellsoft.IoT.Rpi.SenseHat.Fonts
 	{
 		private readonly ISenseHatDisplay _display;
 		private readonly CharacterRenderer<TChar> _characterRenderer;
-		private readonly TChar[] _chars;
+		//private readonly TChar[] _chars;
+		private TChar[] _chars;
 		private int _charIndex;
 		private int _charX;
 		private int _initialSpace;
@@ -56,10 +57,17 @@ namespace Emmellsoft.IoT.Rpi.SenseHat.Fonts
 			Reset();
 		}
 
-		/// <summary>
-		/// The total number of pixels scrolled by.
-		/// </summary>
-		public int ScrollPixelOffset
+        public TChar[] setCharacters(IEnumerable<TChar> characters) {
+            _chars = characters.ToArray();
+
+            Reset();
+            return _chars;
+        }
+
+        /// <summary>
+        /// The total number of pixels scrolled by.
+        /// </summary>
+        public int ScrollPixelOffset
 		{ get; private set; }
 
 		/// <summary>

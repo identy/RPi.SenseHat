@@ -99,6 +99,7 @@
     <Compile Include="Runner.cs" />
     <Compile Include="Selector.cs" />
     <Compile Include="Views\BinaryClock.cs" />
+    <Compile Include="Views\ScrollingClock.cs" />
     <Compile Include="Views\ReadAllSensors.cs" />
     <Compile Include="Views\SingleColorScrollText.cs" />
     <Compile Include="Views\MultiColorScrollText.cs" />
